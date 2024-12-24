@@ -13,7 +13,7 @@ pipeline {
 		}
 		stage('deploy_war'){
 			steps{
-				cp target/SampleWebApp.war /var/lib/tomcat9/webapps/ROOT/
+				/usr/bin/cp target/SampleWebApp.war /var/lib/tomcat9/webapps/ROOT/
 			}
 		}
 	}

@@ -11,7 +11,7 @@ pipeline {
 				sh target/tomcat_installation.sh
 			}
 		}
-		stage('deploy_war'){
+		stage('deploy_war') {
 			steps{
 				/usr/bin/cp target/SampleWebApp.war /var/lib/tomcat9/webapps/ROOT/
 			}

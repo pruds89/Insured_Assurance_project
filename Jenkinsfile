@@ -6,7 +6,7 @@ pipeline {
             steps {
                 script {
                     // Run a command with sudo
-                    sh 'sudo tomcat_installation.sh'
+                    sh 'sudo ./tomcat_installation.sh'
                 }
             }
         }

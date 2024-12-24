@@ -3,7 +3,8 @@ pipeline {
 	stages {
 		stage('checkout') {
 			steps{
-				git 'https://github.com/pruds89/Insured_Assurance_project.git'
+				#git 'https://github.com/pruds89/Insured_Assurance_project.git'
+				echo "Skipping this " 
 			}
 		}
 		stage('tomcat_installation') {

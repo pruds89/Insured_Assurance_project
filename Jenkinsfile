@@ -3,7 +3,6 @@ pipeline {
 	stages {
 		stage('checkout') {
 			steps{
-				#git 'https://github.com/pruds89/Insured_Assurance_project.git'
 				echo "Skipping this " 
 			}
 		}

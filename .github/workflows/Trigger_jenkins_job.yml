@@ -13,5 +13,5 @@ jobs:
     steps:
       - name: Trigger Jenkins Job
         run: |
-          curl -X POST  -u ${{ secrets.JENKINS_USER }}:${{ secrets.JENKINS_TOKEN }}  "http://13.203.24.105:8080/job/Insured_Assurance/build"
+          curl -X POST  -u ${{ secrets.JENKINS_USER }}:${{ secrets.JENKINS_TOKEN }}  "${{ secrets.JENKINS_HOST }}/job/${{ secrets.JENKINS_JOB }}/build"
           
